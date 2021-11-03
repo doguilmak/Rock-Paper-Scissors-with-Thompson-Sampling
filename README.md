@@ -62,7 +62,7 @@ Summation: **3** - Thompson sampling: **0**
 
 ![ts_histogram](Plot/ts_histogram.png)
 
-The histogram specified in ts_histogram.png shows the distribution of the last round. In line with the preferences, the algorithm obtained inferences from the user's preferences and only 3 wins were obtained in 12 rounds. The system made a **random choice only in the first round.**
+The histogram specified in ts_histogram.png shows the distribution of the last round. In line with the preferences, the algorithm obtained inferences from the user's preferences and only 1 win were obtained in 12 rounds. The system made a **random choice only in the first round.**
 
 You can find detailed preferences and results in **console_ts.xml**.
 
