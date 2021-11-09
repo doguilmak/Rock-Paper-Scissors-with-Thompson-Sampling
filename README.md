@@ -11,7 +11,7 @@ The dataset was **created automatically as a result of the values selected from 
 
 ## Methodology
 
-In this project, as stated in the title, results were obtained through classifiaction method **Thompson sampling**. 
+In this project, as stated in the title, results were obtained through **Thompson sampling** algorithm. 
 
 ![thompson_equation](equation.jpg)
 
