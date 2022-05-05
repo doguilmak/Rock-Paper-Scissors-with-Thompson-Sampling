@@ -38,7 +38,7 @@ You are free to visit [Thompson sampling](https://en.wikipedia.org/wiki/Thompson
 | Rounds | Rock | Paper | Scissor |
 |--|--|--|--|
 | 0 | 1 | 0 | 0 |
-| 1 | 0 | 1 | 0 |
+| 1 | 0 | 0 | 1 |
 | 2 | 1 | 0 | 0 |
 | 3 | 1 | 0 | 0 |
 | 4 | 1 | 0 | 0 |
@@ -47,7 +47,7 @@ You are free to visit [Thompson sampling](https://en.wikipedia.org/wiki/Thompson
 | 7 | 0 | 1 | 0 |
 | 8 | 0 | 1 | 0 |
 | 9 | 1 | 0 | 0 |
-| 10 | 1 | 0 | 0 |
+| 10 | 0 | 0 | 1 |
 | 11 | 0 | 1 | 0 |
 
 **Thompson Sampling Results**
