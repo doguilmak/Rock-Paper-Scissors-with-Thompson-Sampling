@@ -13,7 +13,11 @@ The dataset was **created automatically. As a result of the values selected from
 
 In this project, as stated in the title, results were obtained through the **Thompson sampling** algorithm. 
 
+<br>
+
 $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
+
+<br>
 
 As seen in the formula:
 
