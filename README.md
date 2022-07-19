@@ -13,11 +13,7 @@ The dataset was **created automatically. As a result of the values selected from
 
 In this project, as stated in the title, results were obtained through the **Thompson sampling** algorithm. 
 
-<br>
-
 $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
-
-<br>
 
 As seen in the formula:
 
@@ -33,9 +29,137 @@ As seen in the formula:
 
 The results were showed on the histogram at the end of each operation. In other words, the tendency of the sampling was indicated on the histogram. Thompson sampling was much more successful than a random one.
 
+	def thompson_sampling(df):
+    
+	    N = df.shape[0]  # Number of rows
+	    d = df.shape[1]  # Number of ads (columns)
+	    summation = 0  # Summation reward
+	    chosen = []  # Ni(n) 
+	    ones = [0] * d
+	    zeros = [0] * d
+	    for n in range(1, N):
+	        ad = 0  # Chosen
+	        max_th = 0
+	        for i in range(0, d):
+	            rasbeta = random.betavariate(ones[i] + 1, zeros[i] + 1)
+	            if rasbeta > max_th:
+	                max_th = rasbeta
+	                ad = i
+	        chosen.append(ad)
+	        reward = df.values[n, ad]
+	        if reward == 1:
+	            ones[ad] = ones[ad] + 1
+	        else:
+	            zeros[ad] = zeros[ad] + 1
+	        summation = summation + reward
+	        
+	    chosen.append(randint(0, 2))
+	    thompson=np.bincount(chosen).argmax()
+	    print(f"Summation: {summation} - Thompson sampling: {thompson}")
+	    
+	    plt.figure(figsize = (12, 12))
+	    sns.set_style('whitegrid')    
+	    sns.histplot(data=chosen, kde=True)
+	    plt.title("Thompson Sampling")
+	    plt.xlabel("Selections")
+	    plt.ylabel("Numbers of the Chosen Number")
+	    plt.show()    
+
+	    return thompson
+
 You are free to visit [Thompson sampling](https://en.wikipedia.org/wiki/Thompson_sampling) website for learn the method better.
 
 ## Analysis
+
+### Branching process
+
+The general outline of the game was created in below. Then the game continued until the user pressed the **q** key, with a while loop.
+
+	wins = 0
+	loses = 0
+	draws = 0
+	d = pd.DataFrame(columns=['r', 'p', 's'])
+
+	while True:
+    
+	    user_action = input("Enter a choice (rock, paper, scissors): ") 
+	           
+	    if user_action == 'q':
+	        print("\n\nYou have completed the duel.")
+	        print("\nTHOMPSON SAMPLING")
+	        thompson_sampling(d)
+	        print(f"Loses: {loses}")
+	        print(f"Wins: {wins}")
+	        print(f"Draws: {draws}")
+	        print(f"Rock-Paper-Scissors DataFrame:\n{d}\n")        
+	        break
+	      
+	    if user_action == "rock":
+	        new_row = {'r': 1, 'p': 0, 's': 0}
+	        d = d.append(new_row, ignore_index=True)        
+	        
+	        # Thompson Sampling
+	        thompson_choose=thompson_sampling(d)
+	        if thompson_choose== 0:
+	            computer_action="paper"
+	        elif thompson_choose == 1:
+	            computer_action="scissors"
+	        else:
+	            computer_action="rock"
+	    
+	    elif user_action == "paper":
+	        new_row = {'r': 0, 'p': 1, 's': 0}
+	        d = d.append(new_row, ignore_index=True)        
+	        
+	        # Thompson Sampling
+	        thompson_choose=thompson_sampling(d)
+	        if thompson_choose== 0:
+	            computer_action="paper"
+	        elif thompson_choose == 1:
+	            computer_action="scissors"
+	        else:
+	            computer_action="rock"
+	    
+	    elif user_action == "scissors":
+	        new_row = {'r': 0, 'p': 0, 's': 1}
+	        d = d.append(new_row, ignore_index=True)        
+	        
+	        # Thompson Sampling
+	        thompson_choose=thompson_sampling(d)
+	        if thompson_choose == 0:
+	            computer_action="paper"
+	        elif thompson_choose == 1:
+	            computer_action="scissors"
+	        else:
+	            computer_action="rock"
+	    else:
+	        print("Unexpected input.")
+	        
+	    print(f"You chose {user_action}, computer chose {computer_action}.")
+	    if user_action == computer_action:
+	        print(f"Both players selected {user_action}. It's a TIE!")
+	        draws += 1
+	    elif user_action == "rock":
+	        if computer_action == "scissors":
+	            print("Rock smashes scissors! You WIN!")
+	            wins += 1
+	        else:
+	            print("Paper covers rock! You LOSE.")
+	            loses += 1
+	    elif user_action == "paper":
+	        if computer_action == "rock":
+	            print("Paper covers rock! You WIN!")
+	            wins += 1
+	        else:
+	            print("Scissors cuts paper! You LOSE.")
+	            loses += 1
+	    elif user_action == "scissors":
+	        if computer_action == "paper":
+	            print("Scissors cuts paper! You WIN!")
+	            wins += 1
+	        else:
+	            print("Rock smashes scissors! You LOSE.")
+	            loses += 1
 
 ### Rock-Paper-Scissors DataFrame:
 
