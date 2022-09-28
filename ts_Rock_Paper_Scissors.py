@@ -5,7 +5,7 @@ Created on Mon Nov  1 21:56:58 2021
 @author: doguilmak
 """
 #%%
-# Importing Libraries
+# 1.Importing Libraries
 
 import matplotlib.pyplot as plt
 import random
@@ -15,7 +15,7 @@ import pandas as pd
 from random import randint
 
 #%%
-# Thompson Sampling
+# 2.Thompson Sampling
 
 def thompson_sampling(df):
     
@@ -55,11 +55,17 @@ def thompson_sampling(df):
 
     return thompson
 
+#%%
+# 3.Building Game
 
 wins = 0
 loses = 0
 draws = 0
 d = pd.DataFrame(columns=['r', 'p', 's'])
+
+rock_row = {'r': 1, 'p': 0, 's': 0}
+paper_row = {'r': 0, 'p': 1, 's': 0}
+scissors_row = {'r': 0, 'p': 0, 's': 1}
 
 while True:
     
@@ -74,45 +80,23 @@ while True:
         print(f"Draws: {draws}")
         print(f"Rock-Paper-Scissors DataFrame:\n{d}\n")        
         break
-      
+    
+    # Thompson Sampling
+    thompson_choose=thompson_sampling(d)
+    if thompson_choose== 0:
+        computer_action="paper"
+    elif thompson_choose == 1:
+        computer_action="scissors"
+    else:
+        computer_action="rock"
+    
+    # User    
     if user_action == "rock":
-        new_row = {'r': 1, 'p': 0, 's': 0}
-        d = d.append(new_row, ignore_index=True)        
-        
-        # Thompson Sampling
-        thompson_choose=thompson_sampling(d)
-        if thompson_choose== 0:
-            computer_action="paper"
-        elif thompson_choose == 1:
-            computer_action="scissors"
-        else:
-            computer_action="rock"
-    
+        d = d.append(rock_row, ignore_index=True)    
     elif user_action == "paper":
-        new_row = {'r': 0, 'p': 1, 's': 0}
-        d = d.append(new_row, ignore_index=True)        
-        
-        # Thompson Sampling
-        thompson_choose=thompson_sampling(d)
-        if thompson_choose== 0:
-            computer_action="paper"
-        elif thompson_choose == 1:
-            computer_action="scissors"
-        else:
-            computer_action="rock"
-    
+        d = d.append(paper_row, ignore_index=True)        
     elif user_action == "scissors":
-        new_row = {'r': 0, 'p': 0, 's': 1}
-        d = d.append(new_row, ignore_index=True)        
-        
-        # Thompson Sampling
-        thompson_choose=thompson_sampling(d)
-        if thompson_choose == 0:
-            computer_action="paper"
-        elif thompson_choose == 1:
-            computer_action="scissors"
-        else:
-            computer_action="rock"
+        d = d.append(scissors_row, ignore_index=True)        
     else:
         print("Unexpected input.")
         
