@@ -225,6 +225,8 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
   </li>
 </ul>
 
+<br>
+
 <h4 align=center><font size = 4>Thompson Sampling vs Thompson Sampling</font></h4>
 
 | Thompson Sampling 1 | Thompson Sampling 2 |
