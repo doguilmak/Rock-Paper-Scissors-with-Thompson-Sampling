@@ -176,23 +176,6 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 	            print("Rock smashes scissors! You LOSE.")
 	            loses += 1
 
-<h3>Rock-Paper-Scissors DataFrame:</h3>
-
-| Rounds | Rock | Paper | Scissor |
-|--|--|--|--|
-| 0 | 1 | 0 | 0 |
-| 1 | 0 | 0 | 1 |
-| 2 | 1 | 0 | 0 |
-| 3 | 1 | 0 | 0 |
-| 4 | 1 | 0 | 0 |
-| 5 | 1 | 0 | 0 |
-| 6 | 1 | 0 | 0 |
-| 7 | 0 | 1 | 0 |
-| 8 | 0 | 1 | 0 |
-| 9 | 1 | 0 | 0 |
-| 10 | 0 | 0 | 1 |
-| 11 | 0 | 1 | 0 |
-
 <b>Thompson Sampling Results</b>
 
 <img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/Plot/ts_histogram.png"  width=1000  height=500  alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai">
@@ -202,7 +185,6 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 <p>The histogram specified in <i>ts_histogram.png</i> shows the distribution of the last round. In line with the preferences, the algorithm obtained inferences from the user's preferences and only 1 win was obtained in 12 rounds. The system made a <b>random choice only in the first round.</b></p>
 
 <p>You can find detailed preferences and results in <i>console_ts.xml</i>.</p>
-
 
 
 <i>Loses: 5</i>
@@ -231,19 +213,19 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <b>Rounds Win & Lose & Draw</b>
 
-|  | $$Random \ Selection$$ | $$Thompson \ Sampling$$ |
+|  | Random Selection | Thompson Sampling |
 |:--:|:--:|:--:|
-| $$Random \ Selection$$ | Win: 35, Lose: 37, Draw: 28 | Win: 25, Lose: 38, Draw: 37 |
-| $$Thompson \ Sampling$$ | Win: 38, Lose: 25, Draw: 37 | Win: 44, Lose: 48, Draw: 8 |
+| Random Selection | Win: 35, Lose: 37, Draw: 28 | Win: 25, Lose: 38, Draw: 37 |
+| Thompson Sampling | Win: 38, Lose: 25, Draw: 37 | Win: 44, Lose: 48, Draw: 8 |
 
 <br>
 
 <b>Rounds Probabilities</b>
 
-|  | $$Random \ Selection$$ | $$Thompson \ Sampling$$ |
+|  | Random Selection | Thompson Sampling |
 |:--:|:--:|:--:|
-| $$Random \ Selection$$ | Win: %35, Lose: %37, Draw: %28 | Win: %25, Lose: %38, Draw: %37 |
-| $$Thompson \ Sampling$$ | Win: %38, Lose: %25, Draw: %37 | Win: %44, Lose: %48, Draw: %8 |
+| Random Selection | Win: %35, Lose: %37, Draw: %28 | Win: %25, Lose: %38, Draw: %37 |
+| Thompson Sampling | Win: %38, Lose: %25, Draw: %37 | Win: %44, Lose: %48, Draw: %8 |
 
 <br>
 
