@@ -40,6 +40,8 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 3. Finally, we took the value with the highest beta value. This value will indicate the option the algorithm will play against us.
 
+<br>
+
 <p>The results were showed on the histogram at the end of each operation. In other words, the tendency of the sampling was indicated on the histogram. Thompson sampling was much more successful than a random one.</p>
 
 	def thompson_sampling(df):
