@@ -211,15 +211,6 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <p>Within the scope of this project, 100 different games were simulated in order to reach more detailed inferences and results. Within the scope of this project, 100 different games were simulated in order to reach more detailed inferences and results. In total, we had simulated 300 games; <i>Random vs. Random</i>, <i>Random vs. Thompson Sampling</i>, and finally <i>Thompson Sampling vs. Thompson Sampling</i>. These results were performed using Thompson Sampling 1 and Random Selection 1.</p>
 
-<b>Rounds Win & Lose & Draw</b>
-
-|  | Random Selection | Thompson Sampling |
-|:--:|:--:|:--:|
-| Random Selection | Win: 35, Lose: 37, Draw: 28 | Win: 25, Lose: 38, Draw: 37 |
-| Thompson Sampling | Win: 38, Lose: 25, Draw: 37 | Win: 44, Lose: 48, Draw: 8 |
-
-<br>
-
 <b>Rounds Probabilities</b>
 
 |  | Random Selection | Thompson Sampling |
