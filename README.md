@@ -178,16 +178,11 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <br>
 
-<b>Thompson Sampling Results</b>
-
-<img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/Plot/ts_histogram.png"  width=1000  height=500  alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai">
-
-<small>Picture Source: <a  href="https://github.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/blob/main/Plot/ts_histogram.png">doguilmak</a></small>
+<p><b>Thompson Sampling Results</b></p>
 
 <p>The histogram specified in <i>ts_histogram.png</i> shows the distribution of the last round. In line with the preferences, the algorithm obtained inferences from the user's preferences and only 1 win was obtained in 12 rounds. The system made a <b>random choice only in the first round.</b></p>
 
 <p>You can find detailed preferences and results in <i>console_ts.xml</i>.</p>
-
 
 <i>Loses: 5</i>
 
