@@ -88,7 +88,7 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <h3>Branching process</h3>
 
-<p>The general outline of the game was created in below. Then the game continued until the user pressed the <b>q</b> key, with a while loop.</p>
+<p>The general outline of the game was created below. Then the game continued until the user pressed the <i>q</i> key, with a while loop.</p>
 
 	wins = 0
 	loses = 0
