@@ -1,0 +1,42 @@
+RANDOM SELECTION - 1
+Random Selection Lose: 37
+Random Selection Wins: 35
+Draws: 28
+
+Rock-Paper-Scissors Random Selection DataFrame:
+    r  p  s
+0   0  1  0
+1   0  1  0
+2   1  0  0
+3   1  0  0
+4   0  1  0
+.. .. .. ..
+95  0  0  1
+96  0  1  0
+97  0  1  0
+98  1  0  0
+99  0  0  1
+
+[100 rows x 3 columns]
+
+
+RANDOM SELECTION - 2
+Random Selection Lose: 35
+Random Selection Wins: 37
+Draws: 28
+
+Rock-Paper-Scissors Random Selection DataFrame:
+    r  p  s
+0   0  1  0
+1   1  0  0
+2   0  0  1
+3   0  0  1
+4   0  1  0
+.. .. .. ..
+95  0  0  1
+96  1  0  0
+97  0  1  0
+98  0  1  0
+99  0  0  1
+
+[100 rows x 3 columns]

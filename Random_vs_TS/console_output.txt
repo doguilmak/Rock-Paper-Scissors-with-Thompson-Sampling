@@ -1,0 +1,44 @@
+THOMPSON SAMPLING
+Summation: 29 - Thompson sampling: 1
+Thompson Sampling: 1
+Thompson Sampling Lose: 25
+Thompson Sampling Wins: 38
+Draws: 37
+
+Rock-Paper-Scissors Thompson Sampling DataFrame:
+    r  p  s
+0   0  0  1
+1   0  0  1
+2   0  1  0
+3   1  0  0
+4   1  0  0
+.. .. .. ..
+95  1  0  0
+96  0  0  1
+97  1  0  0
+98  0  0  1
+99  0  0  1
+
+[100 rows x 3 columns]
+
+
+RANDOM SELECTION
+Random Selection Lose: 38
+Random Selection Wins: 25
+Draws: 37
+
+Rock-Paper-Scissors Random Selection DataFrame:
+    r  p  s
+0   0  1  0
+1   0  1  0
+2   0  1  0
+3   1  0  0
+4   0  0  1
+.. .. .. ..
+95  1  0  0
+96  0  0  1
+97  0  0  1
+98  0  0  1
+99  0  0  1
+
+[100 rows x 3 columns]

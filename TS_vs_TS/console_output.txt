@@ -1,0 +1,45 @@
+THOMPSON SAMPLING-1
+Summation: 68 - Thompson sampling: 2
+AI-1 Thompson Sampling: 2
+AI-1 Loses: 48
+AI-1 Wins: 44
+Draws: 8
+
+Rock-Paper-Scissors Thompson Sampling-1 DataFrame:
+    r  p  s
+0   1  0  0
+1   0  1  0
+2   1  0  0
+3   0  0  1
+4   0  0  1
+.. .. .. ..
+95  0  0  1
+96  0  0  1
+97  0  0  1
+98  0  0  1
+99  0  0  1
+
+[100 rows x 3 columns]
+
+
+THOMPSON SAMPLING-2
+Summation: 51 - Thompson sampling: 1
+AI-2 Thompson Sampling: 1
+AI-2 Loses: 44
+AI-2 Wins: 48
+Draws: 8
+Rock-Paper-Scissors Thompson Sampling-2 DataFrame:
+    r  p  s
+0   0  0  1
+1   0  1  0
+2   0  0  1
+3   0  0  1
+4   0  0  1
+.. .. .. ..
+95  1  0  0
+96  1  0  0
+97  1  0  0
+98  1  0  0
+99  1  0  0
+
+[100 rows x 3 columns]
