@@ -176,6 +176,8 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 	            print("Rock smashes scissors! You LOSE.")
 	            loses += 1
 
+<br>
+
 <b>Thompson Sampling Results</b>
 
 <img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/Plot/ts_histogram.png"  width=1000  height=500  alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai">
