@@ -8,7 +8,7 @@
 
 <h2>Problem Statement</h2>
 
-<p>This project aims to achieve maximum success by the algorithm in the rock-paper-scissors game together with the <b>reinforcement (Thompson sampling) learning</b>method. The achievement of this success will be shaped by the preferences chosen by the user. At the end of each action, the rock, paper, or scissors with the <b>highest beta value and the corresponding value were selected.</b> Compared to the bots that make a random choice, the <b>artificial intelligence model and the integrated model have proven to be more successful</b> in my tests.</p>
+<p>This project aims to achieve maximum success by the algorithm in the rock-paper-scissors game together with the reinforcement (Thompson sampling) learning method. The achievement of this success will be shaped by the preferences chosen by the user. At the end of each action, the rock, paper, or scissors with the highest beta value and the corresponding value were selected. Compared to the bots that make a random choice, the artificial intelligence model and the integrated model have proven to be more successful in my tests.</p>
 
 <br>
 
