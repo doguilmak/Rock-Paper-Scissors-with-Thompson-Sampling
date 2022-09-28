@@ -2,7 +2,7 @@
 
  <img src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png" width=1000 height=400 >
 
-<font size = 2>Picture Source: <a href="pxt.azureedge.net">pxt.azureedge.net</a></font>
+<small>Picture Source: <a href="pxt.azureedge.net">pxt.azureedge.net</a></small>
 
 <br>
 
