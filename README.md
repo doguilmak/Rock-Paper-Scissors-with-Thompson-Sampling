@@ -190,7 +190,7 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <h3>Comparing Random Selection and Thompson Sampling</h3>
 
-<p>Within the scope of this project, 100 different games were simulated to reach more detailed inferences and results. Within the scope of this project, 100 different games were simulated to reach more detailed inferences and results. In total, we simulated 300 games; Random vs. Random, Random vs. Thompson Sampling, and finally Thompson Sampling vs. Thompson Sampling. These results were performed using Thompson Sampling 1 and Random Selection 1.</p>
+<p>Within the scope of this project, 100 different games were simulated to reach more detailed inferences and results. Within the scope of this project, 100 different games were simulated to reach more detailed inferences and results. In total, we simulated 300 games; Random vs. Random, Random vs. Thompson sampling, and finally Thompson sampling vs. Thompson sampling. These results were performed using Thompson sampling 1 and Random Selection 1.</p>
 
 <b>Rounds Probabilities</b>
 
@@ -235,7 +235,7 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <small>Picture Source: <a href="https://github.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI">doguilmak</a></small>
 
-<p>You can examine the preference distribution of two different thompson sampling users on the above-mentioned histogram graphs.</p>
+<p>You can examine the preference distribution of two different Thompson sampling users on the above-mentioned histogram graphs.</p>
 
 <h4 align=center><font size = 4>Random Selection vs Thompson Sampling</font></h4>
 
@@ -243,7 +243,7 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <small>Picture Source: <a href="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/Random_vs_TS/Random_vs_TS.png">doguilmak</a></small>
 
-<p>You can examine the preference distribution Random Selection and Thompson Sampling users on the above-mentioned histogram graphs.</p>
+<p>You can examine the preference distribution Random selection and Thompson sampling users on the above-mentioned histogram graphs.</p>
 
 <br>
 
