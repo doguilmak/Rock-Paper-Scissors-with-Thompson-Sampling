@@ -1,6 +1,6 @@
 **<h1 align=center><font size = 6>Rock Paper Scissors with Thompson Sampling</font></h1>**
 
- <img  src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png">
+ <img src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png" width=1000 height=500 >
 
 <small>Picture Source: <a href="pxt.azureedge.net">pxt.azureedge.net</a></small>
 
@@ -250,7 +250,7 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 | Thompson Sampling 1 | Thompson Sampling 2 |
 |--|--|
-| <img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/TS_vs_TS/TS-1.png"  width=1000  height=500  alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai"> | <img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/TS_vs_TS/TS-2.png"  width=1000  height=500  alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai"> |
+| <img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/TS_vs_TS/TS-1.png"  width=1000  height=500  alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai"> | <img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/TS_vs_TS/TS-2.png" width=1000 height=500 alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai"> |
 
 <small>Picture Source: <a href="https://github.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI">doguilmak</a></small>
 
