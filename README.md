@@ -190,7 +190,7 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <h3>Comparing Random Selection and Thompson Sampling</h3>
 
-<p>Within the scope of this project, 100 different games were simulated to reach more detailed inferences and results. Within the scope of this project, 100 different games were simulated to reach more detailed inferences and results. In total, we simulated 300 games; Random vs. Random, Random vs. Thompson sampling, and finally Thompson sampling vs. Thompson sampling. These results were performed using Thompson sampling 1 and Random Selection 1.</p>
+<p>Within the scope of this project, 100 different games were simulated to reach more detailed inferences and results. In total, we simulated 300 games; Random vs. Random, Random vs. Thompson sampling, and finally Thompson sampling vs. Thompson sampling. These results were performed using Thompson sampling 1 and Random Selection 1.</p>
 
 <b>Rounds Probabilities</b>
 
