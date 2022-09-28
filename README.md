@@ -1,6 +1,6 @@
 **<h1 align=center><font size = 6>Rock Paper Scissors with Thompson Sampling</font></h1>**
 
- <img src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png" width=1000 height=500 >
+ <img src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png" width=1000 height=400 >
 
 <small>Picture Source: <a href="pxt.azureedge.net">pxt.azureedge.net</a></small>
 
