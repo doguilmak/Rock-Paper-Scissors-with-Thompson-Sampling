@@ -1,8 +1,8 @@
 **<h1 align=center><font size = 6>Rock Paper Scissors with Thompson Sampling</font></h1>**
 
- <img  src="https://repository-images.githubusercontent.com/453051709/86616a21-784b-46d8-adc1-05adf2271562"  width=1000  height=500  alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai">
+ <img  src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png">
 
-<small>Picture Source: <a  href="https://github.com/iamvigneshwars/rock-paper-scissors-ai">iamvigneshwars</a></small>
+<small>Picture Source: <a href="pxt.azureedge.net">pxt.azureedge.net</a></small>
 
 <br>
 
