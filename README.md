@@ -1,6 +1,6 @@
 **<h1 align=center><font size = 6>Rock Paper Scissors with Thompson Sampling</font></h1>**
 
- <img src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png" width=1000 height=400 >
+ <img src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png" width=1000 height=400>
 
 <small>Picture Source: <a href="pxt.azureedge.net">pxt.azureedge.net</a></small>
 
@@ -8,7 +8,7 @@
 
 <h2>Problem Statement</h2>
 
-<p>This project aims to achieve maximum success by the algorithm in the rock-paper-scissors game together with the reinforcement (Thompson sampling) learning method. The achievement of this success will be shaped by the preferences chosen by the user. At the end of each action, the rock, paper, or scissors with the highest beta value and the corresponding value were selected. Compared to the bots that make a random choice, the artificial intelligence model and the integrated model have proven to be more successful in my tests.</p>
+<p>This project aims to achieve maximum success by the algorithm in the rock-paper-scissors game together with the <i>reinforcement learning</i>. The achievement of this success will be shaped by the preferences chosen by the user. At the end of each <i>action</i>, the rock, paper, or scissors with the highest <i>beta value</i> and the corresponding value were selected. Compared to the bots that make a <i>random choice</i>, the <i>artificial intelligence model</i> and the <i>integrated model</i> have proven to be more successful in my tests.</p>
 
 <br>
 
@@ -20,7 +20,7 @@
 
 <h2>Methodology</h2>
 
-<p>In this project, as stated in the title, results were obtained through the <b>Thompson sampling</b> algorithm. </p>
+<p>In this project, as stated in the title, results were obtained through the <b><i>Thompson sampling</i></b> algorithm. </p>
 
 <br>
 
@@ -32,17 +32,17 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 1. First, $N_i^0(n)$ and $N_i^1(n)$ numbers were calculated for each action.
 
-	$N_i^0(n)$ = The number of times 0 received as a reward so far.
+	$N_i^0(n)$ = The number of times $0$ received as a reward so far.
 
-	$N_i^1(n)$= Number of times 1 received as a reward so far.
+	$N_i^1(n)$= Number of times $1$ received as a reward so far.
 
 2. Secondly, a random number is generated in the beta distribution specified in the formula for each claim.
 
-3. Finally, we took the value with the highest beta value. This value will indicate the option the algorithm will play against us.
+3. Finally, we took the value with the highest <i>beta value</i>. This value will indicate the option the <i>algorithm</i> will play against us.
 
 <br>
 
-<p>The results were showed on the histogram at the end of each operation. In other words, the tendency of the sampling was indicated on the histogram. Thompson sampling was much more successful than a random one.</p>
+<p>The results were showed on the <i>histogram</i> at the end of each operation. In other words, the tendency of the sampling was indicated on the <i>histogram</i>. <i>Thompson sampling</i> was much more successful than a <i>random choose</i>.</p>
 
 	def thompson_sampling(df):
     
@@ -164,7 +164,7 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <p><b>Thompson Sampling Results</b></p>
 
-<p>The histogram specified in <i>ts_histogram.png</i> shows the distribution of the last round. In line with the preferences, the algorithm obtained inferences from the user's preferences and only 1 win was obtained in 12 rounds. The system made a <b>random choice only in the first round.</b></p>
+<p>The <i>histogram</i> specified in <i>ts_histogram.png</i> shows the <i>distribution</i> of the last round. In line with the preferences, the <i>algorithm</i> obtained inferences from the user's preferences and only 1 win was obtained in 12 rounds. The system made a <b>random choice only in the first round.</b></p>
 
 <p>You can find detailed preferences and results in <i>console_ts.xml</i>.</p>
 
@@ -190,7 +190,7 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <h3>Comparing Random Selection and Thompson Sampling</h3>
 
-<p>Within the scope of this project, 100 different games were simulated to reach more detailed inferences and results. In total, we simulated 300 games; Random vs. Random, Random vs. Thompson sampling, and finally Thompson sampling vs. Thompson sampling. These results were performed using Thompson sampling 1 and Random Selection 1.</p>
+<p>Within the scope of this project, 100 different games were simulated to reach more detailed inferences and results. In total, we simulated 300 games; Random vs. Random, Random vs. Thompson sampling, and finally <i>Thompson sampling</i> vs. <i>Thompson sampling</i>. These results were performed using Thompson sampling 1 and Random Selection 1.</p>
 
 <b>Rounds Probabilities</b>
 
@@ -203,7 +203,7 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 
 <h4>Each Rounds on Excel File</h4>
 
-<p>The decisions made per round played were created as dataframes and then saved in different files in <i>.xlsx</i> format. There are two different excel files for each situation. This is because there are two different game players. A different dataframe was created for each player.</p>
+<p>The decisions made per round played were created as dataframes and then saved in different files in <i>.xlsx</i> format. There are two different <i>excel</i> files for each situation. This is because there are two different game players. A different <i>dataframe</i> was created for each player.</p>
 
 <ul>
 	<li><a href="https://github.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/tree/main/Random_vs_Random">Random Selection vs Random Selection</a>
@@ -233,34 +233,25 @@ $$\theta_i(n) = \beta(N_i^1(n) + 1, N_i^0(n) + 1)$$
 |--|--|
 | <img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/TS_vs_TS/TS-1.png"  width=1000  height=500  alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai"> | <img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/TS_vs_TS/TS-2.png" width=1000 height=500 alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai"> |
 
-<small>Picture Source: <a href="https://github.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI">doguilmak</a></small>
+<small>Picture Source: <a href="https://github.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI">Doğu İlmak GitHub</a></small>
 
-<p>You can examine the preference distribution of two different Thompson sampling users on the above-mentioned histogram graphs.</p>
+<p>You can examine the preference <i>distribution</i> of two different <i>Thompson sampling</i> users on the above-mentioned <i>histogram graphs</i>.</p>
 
 <h4 align=center><font size = 4>Random Selection vs Thompson Sampling</font></h4>
 
 <img  src="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/Random_vs_TS/Random_vs_TS.png"  width=1000  height=500  alt="https://github.com/iamvigneshwars/rock-paper-scissors-ai">
 
-<small>Picture Source: <a href="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/Random_vs_TS/Random_vs_TS.png">doguilmak</a></small>
+<small>Picture Source: <a href="https://raw.githubusercontent.com/doguilmak/Rock-Paper-Scissors-with-Thompson-Sampling-AI/main/Random_vs_TS/Random_vs_TS.png">Doğu İlmak GitHub</a></small>
 
-<p>You can examine the preference distribution Random selection and Thompson sampling users on the above-mentioned histogram graphs.</p>
+<p>You can examine the preference distribution <i>Random selection</i> and <i>Thompson sampling</i> users on the above-mentioned <i>histogram</i> graphs.</p>
 
 <br>
 
-<h2>How to Run Code</h2>
-
-<p>Before running the code make sure that you have these libraries:</p>
-
- - pandas 
- - matplotlib
- - seaborn
- - numpy
- - random
- 
 <h2>Contact Me</h2>
 
-If you have something to say to me please contact me: 
+<p>If you have something to say to me please contact me:</p>
 
- - Twitter: [Doguilmak](https://twitter.com/Doguilmak) 
- - Mail address: doguilmak@gmail.com
- 
+<ul>
+	 <li>Twitter: <a href="https://twitter.com/Doguilmak">Doguilmak</a></li>
+	 <li>Mail address: doguilmak@gmail.com</li>
+</ul>
